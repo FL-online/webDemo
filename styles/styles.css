@@ -1,0 +1,142 @@
+:root {
+  --primary-color: #0d0e0d;
+  --secondary-color: #4A4D57;
+  --background: #060606;
+  --accent-color: #5bd752;
+  --text-color: #F9F9F9;
+  --background-color: #104d17;
+ --me-color: hsl(350,50%,50%);
+
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 16pt;
+  color: var(--text-color);
+}
+
+body {
+
+  background-color: var(--background-color);
+  /*background-color: lightblue;*/
+    min-height: 100vh;
+    padding: 10px;
+    align-items:center;
+    display:flex;
+    flex-direction:column;
+
+}
+
+h1 {
+  color: var(--accent-color);
+  margin-top:100px;
+  margin-bottom: 20px
+  font-size: 3rem;
+  font-weight:800;
+  text-transform:uppercase;
+  text-align:center;
+
+}
+
+.wrapper{
+    width: 700px;
+    max-width:100%;
+    display:flex;
+    flex-direction:column;
+    gap: 10px;
+}
+input{
+    box-sizing: border-box;
+    padding:12px 20px;
+    width:100%;
+    background:none;
+    border:2px solid var(secondary-color);
+    border-radius: 100px;
+    font: inherit;
+    color:var(--text-color);
+    caret-color: var(--accent-color);
+}
+
+form{
+    position: relative;
+}
+button{
+    position: absolute;
+/*top:0;*/
+    bottom:0;
+    right:0;
+    background-color:var(--accent-color);
+/*height: 25%;*/
+    padding: 0 30px;
+    border:none;
+    border-radius:1000px;
+    font:inherit;
+    font-weight:600;
+    color:var(--background);
+    cursor: pointer;
+}
+
+table{
+    table-layout: fixed;
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+  border-bottom: 1px solid #ddd;
+  padding: 10px;
+   word-wrap: break-word; /* Ermöglicht das Umbrechen von langen Wörtern */
+  white-space: normal; /* Zeilenumbruch ermöglichen */
+  overflow: hidden; /* Verhindert das Überlaufen */
+}
+/*passt Bilder responsiv auf halbe Bildschirmbreite an, streckt aber nicht über Originalbreite*/
+img {
+  max-width: 50%;
+  border-radius: 1%;
+  height: auto;
+}
+
+.container {
+  display: flex;
+  gap: 0.625%;
+}
+
+a {
+  flex: 1;
+  text-decoration: none;
+  outline-color: transparent;
+  text-align: center;
+  line-height: 3;
+  color: black;
+}
+
+a:link,
+a:visited,
+a:focus {
+  background: var(--accent-color);
+  padding: 0 30px;
+  border:none;
+  border-radius:1000px;
+  font:inherit;
+  font-weight:600;
+  color:var(--background);
+  cursor: pointer;
+}
+
+a:hover {
+  background: #3bad32;
+}
+
+a:active {
+  background: #3bad32;
+  color: white;
+}
+
+
+
+
